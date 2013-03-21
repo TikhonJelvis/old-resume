@@ -1,20 +1,21 @@
 % For typesetting urls, like my personal and google code pages.
 \RequirePackage{url}
+\RequirePackage{hyperref}
+
+% Adds mycrotypography support with pdfLaTeX, resulting in better justification.
+\RequirePackage{microtype}
 
 \RequirePackage{tgpagella}
 \RequirePackage[T1]{fontenc}
 \linespread{1.05}
 
-% Adds mycrotypography support with pdfLaTeX, resulting in better justification.
-\RequirePackage{microtype}
-
+% Icons, images and stuff:
+\RequirePackage{globe}
 \RequirePackage{marvosym}
+\RequirePackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
 \RequirePackage{enumitem}
-
-\RequirePackage{hyperref}
-
-\RequirePackage{globe}
 
 % Changes the margin sizes to create more room for the content itself:
 \pagestyle{empty}
@@ -28,6 +29,7 @@
 \newcommand{\university}{University of California, Berkeley}
 \newcommand{\degree}{BS}
 \newcommand{\website}{\url{http://jelv.is}}
+\newcommand{\github}{\url{http://github.com/TikhonJelvis}}
 
 % Removes some unneeded space:
 \setlength{\parindent}{0in}
@@ -51,13 +53,17 @@
 
 \newenvironment{experience}{\begin{itemize}[leftmargin=-0.1em,labelsep=0.2em,label=\null]}{\end{itemize}}
 
+% Little GitHub icon:
+\newcommand{\blacktocat}{\includegraphics[scale=0.25]{blacktocat-32.png}
+\hspace{1ex}}
+
 \newcommand{\header}{
   \ignorespaces
   \begin{center}
     {\Huge \textsc{\name}} \\
     \rule{\textwidth}{1pt}
-    {\large \globe} \website \itshape \hfill {\large \Letter} \hspace{0.3mm} \email $\,\,$\\
-    \hfill {\large \Telefon} \phoneNumber
+    {\large \globe} \website {\itshape \hfill {\large \Letter} \hspace{0.3mm} \email} $\,\,$\\
+    \blacktocat \github \hfill {\itshape {\large \Telefon} \phoneNumber}
     \vspace{-10pt}
   \end{center}
 }

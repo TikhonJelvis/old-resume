@@ -1,0 +1,75 @@
+\rsec{Personal Projects}
+
+\begin{enumerate}[ ]
+\entry{Semantic Diff}{\link{jelv.is/cow}}
+
+  \begin{experience}
+  \item Working on a semantic diff  and merge tool in Haskell codenamed
+    \texttt{cow} that
+    \begin{itemize}
+    \item Compares programs by diffing and analyzing the parse trees
+    \item Finds matching subtrees to robustly detect moved blocks of
+      code
+      \begin{itemize}[label=$\circ$]
+      \item can detect blocks of code that are both modified
+        and moved \emph{simultaneously}
+      \end{itemize}
+    \item Does scope analysis to find renamed variables
+    \item Can do three-way merges with more extensive, semantically aware conflict resolution
+    \end{itemize}
+  \end{experience}
+
+\entry{TPL}{\link{jelv.is/tpl}}
+
+  \begin{experience}
+  \item Designed and implemented (in Haskell) a dynamically typed
+    scripting language, TPL
+    \begin{itemize}
+    \item Influenced by Self, JavaScript, Lua, Scheme and Haskell
+    \item Has some interesting features:
+      \begin{itemize}[label=$\circ$]
+      \item ``Laziness on demand''---fine control over what gets
+        evaluated when
+      \item A unified system for variable scope and object-oriented
+        programming
+      \end{itemize}
+    \item Some silly features as well, like being able to change
+      operator precedence at runtime
+    \end{itemize}
+  \end{experience}
+
+\entry{Prolog}{\link{jelv.is/prolog}}
+
+  \begin{experience}
+  \item Wrote a simple Prolog interpreter in Haskell
+    \begin{itemize}
+    \item The main goal is to introduce intermediate Haskell concepts like the list monad
+    \item Optimized for clarity and conciseness rather than
+      performance or features
+      \begin{itemize}[label=$\circ$]
+      \item The Prolog logic (unification, resolution, etc) is 70 lines of idiomatic
+        Haskell
+      \item Does not support IO, arithmetic or the cut operator
+      \end{itemize}
+    \end{itemize}
+  \end{experience}
+
+\entry{Life}{\link{jelv.is/frp}}
+
+  \begin{experience}
+  \item Wrote a simple app for John Conway's Game of Life
+    \begin{itemize}
+    \item Primarily didactic: used to introduce functional reactive
+      programming (FRP)
+    \item UI code is short and declarative, using the Reactive Banana
+      FRP framework
+    \item Gave a 20 minute talk with slides on FRP, using this as the main
+      example
+    \end{itemize}
+  \end{experience}
+
+% I wrote a simple app for John Conway's Game of Life. The main goal was to teach people about functional reactive programming (FRP). I used wxWidgets and the Reactive Banana library for Haskell. I also created a slide deck and gave a 20 minute presentation on FRP using code from this project. <\link{http://jelv.is/frp}> <\link{http://github.com/TikhonJelvis/Reactive-Life}>
+
+\si{More} I have more projects at my website <\url{http://jelv.is/projects.html}> and on my GitHub account <\url{http://github.com/TikhonJelvis}>.
+
+\end{enumerate}

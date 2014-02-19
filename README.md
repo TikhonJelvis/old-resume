@@ -1,6 +1,6 @@
 # Résumé
 
-Here are the LaTeX files for my résumé. You can see a recent pdf version on my site: [jelv.is/resume.pdf](jelv.is/resume.pdf).
+Here are the LaTeX files for my résumé. You can see a recent pdf version on my site: [jelv.is/resume.pdf](http://jelv.is/resume.pdf).
 
 For this iteration, I didn't use a template—I just designed everything from the ground up. (Not that there's all that much actual design involved!) I think the GitHub icon is cute :).
 
